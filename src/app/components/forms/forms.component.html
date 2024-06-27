@@ -20,13 +20,15 @@
         <span>18:01h ás 23:00h</span>
     </div>
     <div class="checkbox-wrapper">
-        <input type="checkbox" name="show-closed" id="show-closed" formControlName="showClosed">
-        <label for="show-closed">Exibir unidades fechadas</label>
+        <div class="checkbox">
+            <input type="checkbox" name="show-closed" id="show-closed" formControlName="showClosed">
+            <label for="show-closed">Exibir unidades fechadas</label>
+        </div>
         <span>Resultados encontrados: {{ results.length }}</span>
     </div>
     <div class="btn-wrapper">
         <button type="button" class="btn btn-primary" (click)="onSubmit()">Encontrar unidade</button>
         <button type="button" class="btn btn-secondary" (click)="onClean()">Limpar</button>
     </div>
-    
+
 </form>

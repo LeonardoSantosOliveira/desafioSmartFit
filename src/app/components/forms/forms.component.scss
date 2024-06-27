@@ -58,6 +58,7 @@
 
 .btn-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 12px;
     align-items: center;
     justify-content: center;
@@ -88,11 +89,32 @@
 .checkbox-wrapper {
     color: $light-grey;
     margin: 32px 0;
-    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
 
     & span {
-        position: absolute;
         right: 0;
+    }
+
+    & input[type="checkbox"] {
+        margin-right: 4px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .btn-wrapper {
+        flex-direction: row;
+    }
+
+    .checkbox-wrapper {
+        justify-content: space-between;
+        flex-direction: row;
+    
+        & span {
+            right: 0;
+        }
     }
 }
