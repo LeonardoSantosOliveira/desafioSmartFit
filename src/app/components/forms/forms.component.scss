@@ -71,7 +71,7 @@
         font-weight: 700;
         text-transform: uppercase;
         padding: 14px;
-        width: 25%;
+        width: 90%;
         border: none;
         cursor: pointer;
 
@@ -107,6 +107,10 @@
 @media screen and (min-width: 768px) {
     .btn-wrapper {
         flex-direction: row;
+
+        & .btn {
+            width: 25%;
+        }
     }
 
     .checkbox-wrapper {
