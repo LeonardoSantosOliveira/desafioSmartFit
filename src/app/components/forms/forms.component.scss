@@ -45,6 +45,10 @@
         position: relative;
         color: $medium-text;
 
+        & input[type="radio"] {
+            margin-right: 4px;
+        }
+
         &:nth-last-child(3) {
             border-bottom: 1px solid $light-text;
         }
