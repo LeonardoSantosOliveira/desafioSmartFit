@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { Location } from './Interfaces/unit-response/location.interface';
 import { GetUnitService } from './services/get-unit.service';
 import { LegendComponent } from './components/legend/legend.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { LegendComponent } from './components/legend/legend.component';
     CardsListComponent,
     CommonModule,
     LegendComponent,
+    FooterComponent,
   ],
   providers: [
   ],
